@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.container-inner{
+    padding: 20px 40px;
+}
+
+.head-icon{
+    font-family: 'Dancing Script', cursive;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.head-icon h4{
+    font-weight: 900 !important;
+}
+
+.myheader{
+    padding: 10px 20px 5px;
+    display: flex;
+    position: relative;
+}
+
+.head-right{
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    & button{
+        margin: 0 5px;
+    }
+}
+
+.sign-in{
+    background: transparent;
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    border: none;
+    color: #212121;
+    font-weight: 500;
+}
+
+.sign-up-button{
+    background: #ea4c89;
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+#head{
+    padding: 0 55px;
+    background: #F9F8FD;
+    margin: 15px auto;
+}
+
+.head-text{
+    padding: 70px 0;
+}
+
+.main-text h1{
+    font-weight: 900;
+    font-size: 56px;
+}
+
+.head-signup button{
+    background: #ea4c89;
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.head-image{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.main-image{
+    background-image: url("https://cdn.dribbble.com/assets/art-banners/romainbriaux-9270a203743088cf36b939b04708d9a18fa794e04373964283a2d87c8f6fba0f.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 520px;
+    height: 290px;
+}
+
+
+.filter-type{
+    display: flex;
+    justify-content: center;
+}
+
+.types{
+    border: 1px solid #EAEAEA;
+    display: inline-block;
+    padding: 2.5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.typeActive{
+    background: #E0E0E0;
+}
+
+
+.content{
+    margin: 15px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.content-data{
+    height: 200px;
+    border-radius: 5px;
+}
+
+.content-data img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.content-msg{
+    margin: 5px auto 2.5px;
+}
+
+.user{
+    border-right: 50%;
+}
+
+.content-hover{
+    display: none;
+    position: absolute;
+    bottom: 29px;
+    width: 100%;
+}
+
+
+.hover-data{
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 35px 15px 15px;
+    background: linear-gradient(180deg, transparent 30%, rgba(17, 15, 15, 0.308) 50%, rgba(12, 12, 12, 0.3) 100%);
+    color: white;
+}
+
+.folder-icon{
+    color: #616161;
+    padding: 5px 8px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.like-icon{
+    color: #616161;
+    padding: 5px 8px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.content:hover{
+    .content-hover{
+        display: inline;
+    }
+}
+
+.signup{
+    text-align: center;
+    margin: 25px 0;
+
+    & button{
+        background: #ea4c89;
+        padding: 7.5px 15px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+
+footer{
+    background: #fafafb;
+    padding: 50px 0 20px;
+}
+
+
+.about h3 {
+    font-size: 1.5em;
+    color: #212121;
+    margin-bottom: 1em;
+}
+
+.about p {
+    color: #212121;
+    line-height: 1.5em;
+    word-spacing: 1px;
+}
+
+.events h3 {
+    font-size: 1.5em;
+    color: #212121;
+    margin-bottom: 1em;
+}
+
+.events p {
+    font-size: .9em;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #212121
+}
+
+
+.navigation h3 {
+    font-size: 1.5em;
+    color: #212121;
+    margin-bottom: 1em;
+}
+
+ul{
+    padding: 0;
+}
+
+.navigation ul li {
+    display: block;
+    margin-bottom: .5em;
+    color: #212121;
+    font-size: 0.9em;
+}
+
+.navigation ul li a {
+    color: #212121;
+}
+
+.navigation ul li a:hover {
+    color: #212121;
+    text-decoration: none;
+}
+
+
+.newsletter h3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #212121;
+    margin-bottom: 1em;
+}
+
+.mail {
+    background: #FFFFFF;
+    box-shadow: none;
+    padding: 10px 10px;
+    color: #212121;
+    font-size: .9em;
+    width: 100%;
+    border: 1px solid #ffffff;
+    margin-bottom: 1em;
+}
+
+.newsletter button {
+    background: #ea4c89;
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.footer-hr{
+    margin: 25px 0;
+}
+
+.footer-lower{
+    color: #212121;
+}
+
+.lower-center{
+    text-align: center;
+}

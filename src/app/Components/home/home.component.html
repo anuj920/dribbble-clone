@@ -1,0 +1,195 @@
+<header>
+    <div class="myheader">
+        <div class="head-icon">
+            <span><h4>dribbble </h4></span>
+        </div>
+
+        <div class="head-right">
+            <button type="button" class="sign-in">Sign in</button>
+            <button type="button" class="sign-up-button">Sign Up</button>
+        </div>
+    </div>
+</header>
+
+
+<section id="head">
+
+
+    <div class="row">
+
+        <div class="col-lg-6">
+
+            <div class="head-text">
+
+                <div class="main-text">
+                    <h1>Discover the world’s top designers & creatives</h1>
+                </div>
+
+                <div class="para-text">
+                    <p>Dribbble is the leading destination to find & showcase creative work and home to the world's best design professionals.</p>
+                </div>
+
+                <div class="head-signup">
+                    <button type="button">Sign Up</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+            <div class="head-image">
+
+                <div class="main-image">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</section>
+
+
+<div class="container-inner">
+
+
+
+    <section id="projects">
+
+        <div class="row">
+
+
+            <div class="col-12">
+
+                <div class="filter-type">
+
+                    <div *ngFor="let type of types" (click)="filterByType(type)" class="types" [ngClass]="{'typeActive': type==activetype}">
+
+                        <span>{{type}}</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+
+            <div *ngFor="let d of data" class="col-sm-6 col-md-4 col-lg-3">
+
+                <div  class="content">
+
+                    <div class="content-data">
+
+                        <img [src]="d.image_url" alt="">
+
+                    </div>
+
+
+                    <div class="content-msg">
+                        <span><i class="fas fa-user-tie user"></i> {{d.name.length>25 ? d.name.slice(0,22)+"..." : d.name}}</span> &nbsp;
+                        <span style="color: gray;" class="float-right">
+                            <span><i class="fas fa-comment"></i> {{d.comment_count}}</span> &nbsp;
+                            <span><i class="fas fa-heart"></i> {{d.likes_count}}</span>
+                        </span>
+                    </div>
+
+
+                    <div class="content-hover">
+                        <div class="hover-data">
+                            <span class="text-capitalize">{{d.description.length>25 ? d.description.slice(0,22)+"..." : d.description}}</span>
+
+                            <span class="float-right">
+                                <span class="folder-icon"><i class="fas fa-folder-plus"></i></span> &nbsp;
+                                <span class="like-icon"> <i class="fas fa-heart"></i> </span>
+                            </span>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="signup">
+            <button type="button">Sign up to continue</button>
+        </div>
+
+    </section>
+
+</div>
+
+
+<footer>
+
+    <div class="footer">
+        <div class="container-inner">
+            <div class="row">
+                <div class="col-md-3 about">
+                    <h3>ABOUT</h3>
+                    <p>Dribbble is the world’s leading community for creatives to share, grow, and get hired.</p>
+                </div>
+                <div class="col-md-3 events">
+                    <h3>EVENTS</h3>
+                    <p>12th Aug Curabitur</p>
+                    <p>10th Sept Fusce urna</p>
+                    <p>24th Sept Praesent</p>
+                    <p>17th Oct Malesuada</p>
+                    <p>09th Dec Cum sociis</p>
+                </div>
+                <div class="col-md-3 navigation">
+                    <h3>NAVIGATION</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Mail Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 newsletter">
+                    <h3>Newsletter</h3>
+                    <input type="email" class="mail" name="EMAIL" placeholder="Enter your email here" required="">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+
+            <div class="footer-hr">
+                <hr>
+            </div>
+
+            <div class="footer-lower row">
+                <div class="col-4">
+                    <span class="float-left"> © 2020 Dribbble. All rights reserved. </span>
+                </div>
+
+                <div class="lower-center col-4">
+                    <span> Made with ♥ remotely by Anuj Singh </span>
+                </div>
+
+                <div class="col-4">
+                    <span class="float-right">14,270,670 shots dribbbled </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
