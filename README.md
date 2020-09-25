@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
+## Project configuration steps:
+1) Download/clone project git directory.
+2) Open cmd and navigate to project folder where package.json file exist.
+3) Run "npm install" command to install node_modules
+4) Once installation done run "ng serve" or "npm start" command.
+5) Open browser and type http://localhost:4200.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -25,3 +32,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Hosting
+- https://dribbble-clone-anuj.herokuapp.com/
